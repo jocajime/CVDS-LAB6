@@ -74,34 +74,30 @@
                <failOnMissingWebXml>false</failOnMissingWebXml>
            </configuration>
        </plugin>
-	   
-	   
-	   <!-- Plugin configuration for Heroku compatibility. -->
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-dependency-plugin</artifactId>
-            <version>2.1</version>
-            <executions>
-                <execution>
-                    <phase>package</phase>
-                    <goals>
-                        <goal>copy</goal>
-                    </goals>
-                    <configuration>
-                        <artifactItems>
-                            <artifactItem>
-                                <groupId>com.github.jsimone</groupId>
-                                <artifactId>webapp-runner</artifactId>
-                                <version>8.0.30.2</version>
-                                <destFileName>webapp-runner.jar</destFileName>
-                            </artifactItem>
-                        </artifactItems>
-
-                    </configuration>
-                </execution>
-
-            </executions>
-        </plugin>
+       <plugin>
+           <groupId>org.apache.maven.plugins</groupId>
+           <artifactId>maven-dependency-plugin</artifactId>
+           <version>2.6</version>
+           <executions>
+               <execution>
+                   <phase>validate</phase>
+                   <goals>
+                       <goal>copy</goal>
+                   </goals>
+                   <configuration>
+                       <silent>true</silent>
+                       <artifactItems>
+                           <artifactItem>
+                               <groupId>javax</groupId>
+                               <artifactId>javaee-endorsed-api</artifactId>
+                               <version>7.0</version>
+                               <type>jar</type>
+                           </artifactItem>
+                       </artifactItems>
+                   </configuration>
+               </execution>
+           </executions>
+       </plugin>
 
        <!-- Tomcat embedded plugin. -->
        <plugin>
@@ -115,7 +111,7 @@
        </plugin>
 	   
 	   
-
+	
    </plugins>
   </build>
 </project>
