@@ -5,7 +5,7 @@
             xmlns:f="http://java.sun.com/jsf/core">
 			
 		<h:body>
-			<h:form id="calculadora_form">
+			<h:form id="calculadora_form" method="get">
 				<p:inputText  id="numeros" type="text" binding="#{numeros}" requiredMessage="numeros requeridos"/><br/>
 				<p:outputLabel value="Media: #{calculadoraBean.getMedia()}" /><br/>
 				<p:outputLabel value="Moda: #{calculadoraBean.getModa()}"/><br/>
