@@ -8,7 +8,7 @@
 			<h:form id="calculadora_form">
 				<p:inputText  id="numeros" type="text" binding="#{numeros}" requiredMessage="numeros requeridos"/><br/>
 				<p:outputLabel value="Media: #{calculadoraBean.getMedia()}" /><br/>
-				<p:outputLabel value="Moda: #{calculadoraBean.getModa()}" style="display:none;" /><br/>
+				<p:outputLabel value="Moda: #{calculadoraBean.getModa()}"/><br/>
 				<p:outputLabel value="Desviacion Estandar: #{calculadoraBean.getdEstandar()}"  /><br/>
 				<p:outputLabel value="Varianza: #{calculadoraBean.getVarianza()}"  /><br/>
 				<p:commandButton value="Calcular" update="calculadora_form" actionListener="#{calculadoraBean.calcular(numeros.value)}"/>
