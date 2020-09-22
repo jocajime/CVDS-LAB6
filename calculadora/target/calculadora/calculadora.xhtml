@@ -1,0 +1,19 @@
+ <!DOCTYPE html>
+    <html xmlns="http://www.w3c.org/1999/xhtml"
+            xmlns:h="http://xmlns.jcp.org/jsf/html"
+            xmlns:p="http://primefaces.org/ui"
+            xmlns:f="http://java.sun.com/jsf/core">
+			
+		<h:body>
+			<h:form id="calculadora_form">
+				<p:inputText  id="numeros" type="text" binding="#{numeros}" />
+				<p:outputLabel value="Media: #{calc.getMedia()}" />
+				<p:outputLabel value="Moda: #{calc.getModa()}" style="display:none;" />
+				<p:outputLabel value="Desviacion Estandar: #{calc.getdEstandar()}"  />
+				<p:outputLabel value="Varianza: #{calc.getVarianza()}"  />
+			</h:form>
+			<p:commandButton value="Calcular" update="calculadora_form" actionListener="#{calc.calculate(numeros.value)}"/>
+			<p:commandButton value="Reiniciar" update="calculadora_form" actionListener="#{calc.restart()}"/>
+		</h:body>
+		
+    </html>

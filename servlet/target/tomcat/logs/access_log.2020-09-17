@@ -1,0 +1,4 @@
+0:0:0:0:0:0:0:1 - - [17/Sep/2020:00:54:34 -0500] "GET /jjServlet?id=2 HTTP/1.1" 200 169 http-bio-8080-exec-7 1188
+0:0:0:0:0:0:0:1 - - [17/Sep/2020:00:55:31 -0500] "GET /jjServlet?id=d HTTP/1.1" 400 20 http-bio-8080-exec-9 7
+0:0:0:0:0:0:0:1 - - [17/Sep/2020:00:56:04 -0500] "GET /helloServlet?name=%20joel HTTP/1.1" 200 21 http-bio-8080-exec-10 137
+0:0:0:0:0:0:0:1 - - [17/Sep/2020:00:56:19 -0500] "GET /helloServlet?name=%20joel%20y%20johan HTTP/1.1" 200 30 http-bio-8080-exec-2 3

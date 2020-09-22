@@ -1,0 +1,24 @@
+ <!DOCTYPE html>
+    <html xmlns="http://www.w3c.org/1999/xhtml"
+            xmlns:h="http://xmlns.jcp.org/jsf/html"
+            xmlns:p="http://primefaces.org/ui"
+            xmlns:f="http://java.sun.com/jsf/core">
+			
+		<h:body>
+			<h:form id="calculadora_form">
+				<p:inputText  id="numeros" type="text" binding="#{numeros}" requiredMessage="numeros requeridos"/><br/>
+				<p:outputLabel value="Media: #{calculadoraBean.getMedia()}" /><br/>
+				<p:outputLabel value="Moda: #{calculadoraBean.getModa()}" style="display:none;" /><br/>
+				<p:outputLabel value="Desviacion Estandar: #{calculadoraBean.getdEstandar()}"  /><br/>
+				<p:outputLabel value="Varianza: #{calculadoraBean.getVarianza()}"  /><br/>
+				<p:commandButton value="Calcular" update="calculadora_form" actionListener="#{calculadoraBean.calcular(numeros.value)}"/>
+				<p:commandButton value="Reiniciar" update="calculadora_form" actionListener="#{calculadoraBean.restart()}"/>
+			</h:form>
+			<p:dataTable var="ingresados" value="#{calculadoraBean.getIngresados()}">
+				<p:column headerText="Anteriores">
+					<h:outputText value="#{ingresados}" />
+				</p:column>
+			</p:dataTable>
+		</h:body>
+		
+    </html>
