@@ -1,5 +1,9 @@
+<!DOCTYPE HTML>
 <html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="refresh" content="0;URL=calculadora.xhtml">
+</head>
 <body>
-<h2>buena perro!</h2>
 </body>
 </html>
