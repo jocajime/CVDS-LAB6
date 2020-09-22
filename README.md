@@ -156,7 +156,7 @@ vamos a realizar el proyecto de una calculadora estadística, para esto creamos 
 
 
 
-# Biblografia
+## Biblografia
 
  - https://es.wikipedia.org/wiki/Anexo:Códigos_de_estado_HTTP
  - https://developer.mozilla.org/es/docs/Web/HTTP/Methods
