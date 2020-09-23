@@ -2,7 +2,7 @@
 	
 	<!DOCTYPE html>
 
- <html xmlns="http://www.w3c.org/1999/xhtml" xml:lang="en"
+ <html xmlns="http://www.w3c.org/1999/xhtml" 
             xmlns:h="http://xmlns.jcp.org/jsf/html"
             xmlns:p="http://primefaces.org/ui"
             xmlns:f="http://java.sun.com/jsf/core">
@@ -21,10 +21,9 @@
       </div>
       <div id="menubar">
         <ul id="menu">
-          <!-- put class="tab_selected" in the li tag for the selected page - to highlight which page you're on -->
-          <li class="tab_selected"><a href="index.html">Inicio</a></li>
-          <li><a href="about_us.html">Nosotros</a></li>
-          <li><a href="contact.html">Contacto</a></li>
+          <li class="tab_selected"><a href="calculadora.xhtml">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
         </ul>
       </div>
     </div>
@@ -33,15 +32,29 @@
       <div id="panel"><img src="style/pantalla.jpg" alt="calculadora" /></div>
       
       <div id="content">
-        <h1 align="center-left">Que es la media</h1> 
+        <h1 align="center-left">Media Aritmetica</h1> 
 		<p align="center-left">
-		La media aritmética es el valor que se obtiene al sumar todos 
-		los datos que tenemos y dividir el resultado entre el número 
-		total de esos datos.
+		La Media aritmetica es el valor que se obtiene al sumar todos los datos que tenemos y dividir el resultado entre el numero total de esos datos.Tambien es llamado promedio.</p>
+        <div id="panel"><img src="style/primera.jpg" alt="calculadora" /></div>
+		<h1 align="center-left">Moda</h1> 
+		<p align="center-left">
+		La moda es el valor con mayor frecuencia en una de las distribucciones de datos. Esto va en forma de una columna cuando encontramos dos modas, es decir, dos datos que tengan la misma frecuencia absoluta maxima.</p>
+		<div id="panel"><img src="style/segunda.jpg" alt="calculadora" /></div>
+		<h1 align="center-left" >Desviacion Estandar</h1> 
+	    <p align="center-left">
+		Es una variable aleatoria, poblacion estadistica, conjunto de datos o distribuccion de probabilidad es la raiz cuadrada de su varianza.</p> 
+		<div id="panel"><img src="style/tercera.jpg" alt="calculadora" /></div>
+		<h1 align="center-left" >Varianza</h1> 
+		<p align="center-left" >
+		Es una medida de dispersion definida como la esperanza del cuadrado de la desviacion de dicha variable respecto a su medida.Su unidad de medida corresponde al cuadrado de la unidad de medida de la variable: por ejemplo, si la variable mide una distancia de metros, la varianza se expresa en metros al cuadrado.</p>
+		<div id="panel"><img src="style/cuarta.jpg" alt="calculadora" /></div>
+		<h1 align="center-left" >Instrucciones</h1> 
+		<p align="center-left">
+		Ingresas los datos separandolos por ";", luego hacer click en Boton de calcular y te va a dar los resultados de Media, Moda, Desviacion estandar y varianza.
 		</p>
-        
-			<h:form id="calculadora_form" method="get">
-				<p:inputText  id="numeros" type="text" binding="#{numeros}" requiredMessage="numeros requeridos"/><br/>
+		
+			<h:form text-align="center-right" id="calculadora_form" method="get">
+				<p:inputText id="numeros" type="text" binding="#{numeros}" requiredMessage="numeros requeridos"/> Datos a calcular<br/>
 				<p:outputLabel value="Media: #{calculadoraBean.getMedia()}" /><br/>
 				<p:outputLabel value="Moda: #{calculadoraBean.getModa()}"/><br/>
 				<p:outputLabel value="Desviacion Estandar: #{calculadoraBean.getdEstandar()}"  /><br/>
@@ -54,6 +67,15 @@
 					<h:outputText value="#{ingresados}" />
 				</p:column>
 			</p:dataTable>
+		<h1 align="center-left" >Referencias</h1> 
+		<div>
+			<a>https://www.varsitytutors.com/hotmath/hotmath_help/spanish/topics/mean-median-mode</a><br/><br/>
+			<a>https://matemovil.com/varianza-y-desviacion-estandar-ejemplos-y-ejercicios/#:~:text=La%20varianza%20y%20la%20desviacion%20estandar%20son%20medidas%20de%20dispersion,muestra%20que%20para%20una%20poblacion.</a><br/><br/>
+			<a>https://es.wikipedia.org/wiki/Estadistica#stica#:~:text=La%20estadistica%20la%20forma%20femenina,la%20matematica%2C%20la%20estadistica%20es</a>
+			
+
+		</div>
+		
     
       </div>
     </div>
