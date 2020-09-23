@@ -1,10 +1,45 @@
- <!DOCTYPE html>
-    <html xmlns="http://www.w3c.org/1999/xhtml"
+
+	
+	<!DOCTYPE html>
+
+ <html xmlns="http://www.w3c.org/1999/xhtml" xml:lang="en"
             xmlns:h="http://xmlns.jcp.org/jsf/html"
             xmlns:p="http://primefaces.org/ui"
             xmlns:f="http://java.sun.com/jsf/core">
-			
-		<h:body>
+
+<head>
+  <title>Calculadora</title>
+  <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+</head>
+
+<h:body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <h1>Calculadora<span class="alternate_colour">CVDS</span></h1>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="tab_selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li class="tab_selected"><a href="index.html">Inicio</a></li>
+          <li><a href="about_us.html">Nosotros</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+	
+    <div id="site_content">
+      <div id="panel"><img src="style/pantalla.jpg" alt="calculadora" /></div>
+      
+      <div id="content">
+        <h1 align="center-left">Que es la media</h1> 
+		<p align="center-left">
+		La media aritmética es el valor que se obtiene al sumar todos 
+		los datos que tenemos y dividir el resultado entre el número 
+		total de esos datos.
+		</p>
+        
 			<h:form id="calculadora_form" method="get">
 				<p:inputText  id="numeros" type="text" binding="#{numeros}" requiredMessage="numeros requeridos"/><br/>
 				<p:outputLabel value="Media: #{calculadoraBean.getMedia()}" /><br/>
@@ -19,6 +54,11 @@
 					<h:outputText value="#{ingresados}" />
 				</p:column>
 			</p:dataTable>
-		</h:body>
-		
-    </html>
+    
+      </div>
+    </div>
+    <div id="footer">Copyright Company JJ. All Rights Reserved</div>
+  </div>
+ 
+</h:body>
+</html>
