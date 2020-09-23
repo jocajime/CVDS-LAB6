@@ -25,6 +25,10 @@ En este proyecto se presenta un herramienta para el calculo de diferentes valore
 ## Funcionamiento
 en la aplicación se puede notar un formulario en donde tenemos que ingresar un texto este formulario aqui se ingresaran los datos separados por un ";" y daremos a calcular, en caso de que querer borrar el proceso daremos a reiniciar esto borrara todos los datos de la aplicación.
 
+### Estado de la aplicación
+
+**Circle Ci:** [![jocajime](https://circleci.com/gh/jocajime/CVDS-LAB6.svg?style=shield)](https://github.com/jocajime/CVDS-LAB6)
+
 ### Biblografia
  - https://www.varsitytutors.com/hotmath/hotmath_help/spanish/topics/mean-median-mode
  - https://matemovil.com/varianza-y-desviacion-estandar-ejemplos-y-ejercicios/#:~:text=La%20varianza%20y%20la%20desviación%20estándar%20son%20medidas%20de%20dispersión,muestra%20que%20para%20una%20población.
