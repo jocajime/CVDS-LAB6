@@ -9,6 +9,7 @@ En este proyecto se presenta un herramienta para el calculo de diferentes valore
 **los valores que se calculan en este proyecto son:**
 
  **1. Media:** es la suma de los datos dividida entre el número total de datos.
+ 
 ![](https://github.com/jocajime/CVDS-LAB6/blob/master/Imagenes/MediaFormula.PNG)
 
  **2. Moda:** La moda de un conjunto de números es el número que aparece más a menudo.
