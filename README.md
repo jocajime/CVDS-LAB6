@@ -28,6 +28,7 @@ en la aplicación se puede notar un formulario en donde tenemos que ingresar un 
 ### Estado de la aplicación
 
 **Circle Ci:** [![jocajime](https://circleci.com/gh/jocajime/CVDS-LAB6.svg?style=shield)](https://github.com/jocajime/CVDS-LAB6)
+**Codacy:** [![Codacy Badge](https://app.codacy.com/project/badge/Grade/ee21eeb766784ea08adfb6420d2fd966)](https://www.codacy.com/manual/jocajime/CVDS-LAB6/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=jocajime/CVDS-LAB6&amp;utm_campaign=Badge_Grade)
 
 ### Biblografia
  - https://www.varsitytutors.com/hotmath/hotmath_help/spanish/topics/mean-median-mode
