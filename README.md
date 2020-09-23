@@ -27,6 +27,7 @@ en la aplicación se puede notar un formulario en donde tenemos que ingresar un 
 
 ### Estado de la aplicación
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d86fd7fbee654b169bda43f4e1e47440)](https://app.codacy.com/manual/jocajime/CVDS-LAB6?utm_source=github.com&utm_medium=referral&utm_content=jocajime/CVDS-LAB6&utm_campaign=Badge_Grade_Settings)
 **Circle Ci:** [![jocajime](https://circleci.com/gh/jocajime/CVDS-LAB6.svg?style=shield)](https://github.com/jocajime/CVDS-LAB6)
 
 ### Biblografia
