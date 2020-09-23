@@ -13,6 +13,7 @@ En este proyecto se presenta un herramienta para el calculo de diferentes valore
 ![](https://github.com/jocajime/CVDS-LAB6/blob/master/Imagenes/MediaFormula.PNG)
 
  **2. Moda:** La moda de un conjunto de números es el número que aparece más a menudo.
+ 
  **3. Varianza:** se define como la media aritmética de los cuadrados de las diferencias de los datos con su media aritmética.
  
 ![](https://github.com/jocajime/CVDS-LAB6/blob/master/Imagenes/VarianzaFormula.PNG)
