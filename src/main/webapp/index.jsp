@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta http-equiv="refresh" content="5;URL=http://www.google.com">
+<meta http-equiv="refresh" content="0;URL=calculadora.xhtml">
 </head>
 <body>
 </body>
